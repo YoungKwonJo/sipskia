@@ -10,10 +10,10 @@ skia_lib_dir = '/Users/moonsookim/skia/out/Static'
 boost_python_include_dir = '/usr/local/include/'
 boost_python_lib_dir = '/usr/local/lib'
 if 'linux' in sys.platform:
-    skia_include_home_prefix = '/home/ubuntu/skia'
-    skia_lib_dir = '/home/ubuntu/skia/out/Static'
-    boost_python_include_dir = '/home/ubuntu/boost/include/'
-    boost_python_lib_dir = '/home/ubuntu/boost/lib'
+    skia_include_home_prefix = '/home/ec2-user/skia/skia'
+    skia_lib_dir = '/home/ec2-user/skia/skia/out/Static'
+    boost_python_include_dir = '/home/ec2-user/boost/install/include/'
+    boost_python_lib_dir = '/home/ec2-user/boost/install/lib'
 # 사용자 경로 설정 부분 끝
 
 module_name = 'sipskia'
@@ -136,3 +136,4 @@ setup(name=module_name,
       version='0.0.2',
       description='This is a Simple Image Processing by Skia',
       ext_modules=[module])
+
